@@ -1,489 +1,307 @@
-// for (let i = 1; i<=10;i++){
-//     console.log(i)
+// -----------------(do while loop)-----------------
+// do{
+//     console.log("Hello");
 // }
+// while (12>13)
 
-// for (let i=1 ; i <=20;i++){
-//     if (i%2==0){
-//         console.log(i)
-//     }
+// -----------------(Recursion in JavaScript)-----------------
+// (A function is calling another function)
+// function abcd(){
+//     console.log("hey");
+//     abcd();
 // }
+// abcd();
 
-// for (let i=10;i>=1;i--){
-//     console.log(i)
+// function abcd(n){
+//     if (n===0) return;
+//     console.log(n);
+//     abcd(n-1);
 // }
+// abcd(5);
 
-// for (let i=1 ;i<=5;i++){
-//     console.log("Yes")
-// }
-
-// for (let i=1;i<=10;i++){
-//     if (i%2==0){
-//         console.log(`${i} is Even.`)
-//     }else {
-//         console.log(`${i} is Odd.`)
-//     }
-// }
-
-// let num=prompt("Enter a Number : ")
-// if (num%2==0) console.log(`${num} is Even.`)
-//     else console.log(`${num} is Odd.`)
-
-// let num=prompt("Enter a Number : ")
-// if (num>=0) console.log(`${num} is Positive Number.`)
-//     else console.log(`${num} is Negative Number.`)
-
-// for (let i = 1;i<=10;i++)(
-//     console.log(`5 X ${i} = ${i*5}`)
-// )
-
-// let age = +prompt("Enter your Age : ")
-// if (age >= 18) console.log("You are eligible for vote.")
-// else console.log("You are not eligible for vote.")
-
-// let age = prompt("Enter age : ")
-// if (age === null) {
-//     console.error("You Cancelled it.")
-// }
-// else {
-//     if (age.trim() === "") {
-//         console.log("Bro What are you doing.......")
-//     }
-//     else {
-//         age = Number(age.trim());
-//         if (isNaN(age)) {
-//             console.error("Bhai, Please give a number.......")
-//         }
-//         else {
-//             if (age < 0) console.log("Your age can't below 0.....")
-//             else {
-//                 if (age >= 18) console.log("You are eligible for vote.")
-//                 else console.log("You are not eligible for vote.")
-//             }
-//         }
-//     }
-// }
-
-// for (let i = 1; i<=10;i++) console.log(`5 X ${i} = ${i*5}`)
-
-// let count = 0;
-// for (let i = 1; i<=15;i++) {
-//     if (i>8){
-//         count++;
-//     }
-// }
-// console.log(count);
-
-// let password = "Rajesh@123"
-// let pass = prompt("Enter Password")
-// if (pass === null) {
-//     console.error("You Cancelled It.");
-// }
-
-
-
-
-
-// let age = prompt("Enter age : ")
-// if (age === null) {
-//     console.error("You Cancelled it.")
-// }
-// else {
-//     if (age.trim() === "") {
-//         console.log("Please write something.......")
-//     }
-//     else {
-//         age = Number(age.trim());
-//         if (isNaN(age)) {
-//             console.error("Bhai, Please give a number.......")
-//         }
-//         else {
-//             if (age < 0) console.error("Your age can't below 0.....")
-//             else {
-//                 if (age >= 18) console.log("You are eligible for vote.")
-//                 else console.log("You are not eligible for vote.")
-//             }
-//         }
-//     }
-// }
-
-
-
-
-
-// let age = prompt("Enter your age.");
-// if (age === null) {
-//     console.log("You Cancelled it.");
-// }
-// else {
-//     if (age.trim() === "") {
-//         console.log("Please write something.");
-//     }
-//     else {
-//         age = Number(age.trim());
-//         if (isNaN(age)) {
-//             console.log("Please enter a Number not a string. ");
-//         }
-//         else {
-//             if (age < 0) {
-//                 console.log("Invalid Number");
-//             }
-//             else {
-//                 if (age >= 18) {
-//                     console.log("You can vote.");
-//                     console.log(`Your age is ${age}.`)
-//                 }
-//                 else {
-//                     console.log("You can't vote.");
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// for (let i = 1; i <= 10; i++) {
-//     console.log(`5 X ${i} = ${5 * i}`);
-// }
-
-// let count =0;
-// for (let i = 1;i<=15;i++){
-//     if (i>8){
-//         count++;
-//     }
-// }
-// console.log(count);
-
-// let password ="Rajesh@123"
-// let pass = prompt("Enter yor password: ");
-// if (pass === null){
-//     console.error("You Cancelled it.");
-// }
-// else{
-//     if (pass.trim()===""){
-//         console.log("Please Enter your Password.");
-//     }
-//     else{
-//         if (pass===password){
-//             console.log("Logged in Successfully.");
-//         }
-//         else {
-//             console.log("Incorrect Password.");
-//         }
-//     }
-// }
-
-
-
-// (______CHATGPT CODE CORRECTION AND IMPROVEMENT______)
-// let password = "Admin@123";
-// let count = 0;
-
-// while (count < 3) {
-//     let pass = prompt("Enter your password: ");
-
-//     if (pass === null) {
-//         console.log("You cancelled it.");
-//         break;
-//     }
-
-//     if (pass.trim() === "") {
-//         console.log("Please Enter Your Password.");
-//         continue;
-//     }
-
-//     if (pass === password) {
-//         console.log("Logged in Successfully.");
-//         break;
-//     }
-//     else {
-//         count++;
-//         console.log("Incorrect Password. Attempt: " + count);
-//     }
-
-//     if (count === 3) {
-//         console.log("You have exceeded the maximum number of attempts. Account Blocked.");
-//     }
-// }
-
-// let attempts = 0;
-// let khulgaya = false;
-// let password = "Rajesh@123"
-// let pass = prompt("Enter your password: ");
-// attempts++;
-// if (pass === password) khulgaya = true;
-// while (pass !== password) {
-//     if (attempts === 3) {
-//         console.error("Account Blocked.");
-//         break;
-//     }
-//     pass = prompt("Incorrect Password. Please Enter Again: ");
-//     if (pass === password) khulgaya = true;
-//     attempts++;
-// }
-// if (khulgaya === true) console.log("Logged in Successfully.");
-
-// let attempts = 0;
-// let password = "1234";
-// let Oppened = false;
-// let pass = prompt("Enter your password: ");
-// attempts++;
-// if (pass === password) Oppened = true;
-// while (pass !== password) {
-//     if (attempts === 3) {
-//         console.error("Account Blocked.");
-//         break;
-//     }
-//     pass = prompt("Incorrect password. Please Enter Again: ");
-//     if (pass === password) Oppened = true;
-//     attempts++;
-// }
-// if (Oppened === true) console.log("Logged in Successfully.");
-
-// let name=prompt("Enter your name: ");
-// console.log(`Hello, ${name}! Welcome to our website.`);
-
-// let num = prompt("Enter a number: ");
-// if (num %2==0){
-//     console.log(`${num} is Even.`);
-// }
-// else {
-//     console.log(`${num} is Odd.`);
-// }
-
-// let password = "admin"
-// let pass = prompt("Enter your password: ");
-// if (pass=== password ){
-//     console.log("Access Granted.");
-// }
-// else{
-//     console.log("Access Denied.");
-// }
-
-// let type=prompt("Enter anything:");
-// if (type.trim()===""){
-//     console.log("You entered nothing.");
-// }
-
-// let password = "123"
-// let attempts = 0;
-// let pass = prompt("Enter Password:");
-// attempts++;
-// while (pass !== password) {
-//     if (attempts === 2) {
-//         console.log("Try agin later.");
-//         break;
-//     }
-//     pass = prompt("Incorrect Password. Please Enter Again:");
-//     attempts++;
-//     if (pass === password) {
-//         console.log("Logged in Successfully.");
-//         break;
-//     }
-// }
-
-// let pin ="5678"
-// let attempts =0;
-// let access= false;
-// let enterPin=prompt("Enter Your Pin: ");
-// attempts++;
-// if (enterPin===pin) access=true;
-// while(enterPin!==pin){
-//     if (attempts===3){
-//         console.log("Card Blocked.");
-//         break;
-//     }
-//     enterPin=prompt("Incorrect Pin. Please Enter Again: ");
-//     attempts++;
-//     if (enterPin===pin) access=true;
-// }
-// if (access===true) console.log("Access Granted.");
-
-// _____________________(Password Problem)____________________
-//pehla password mango
-//galat 
-//password
-//galat
-//password
-//error
-
-// let attempt=0;
-// let password="admin"
-
-// let pass=prompt("Enter your password: ");
-// attempt++;
-
-// while (pass!==password){
-//     if (attempt===3){
-//         console.error("Account Blocked.");
-//         break;
-//     }
-//     pass=prompt("Incorrect Password. Please Enter Again: ");
-//     attempt++;
-// }
-// if (pass===password) console.log("Logged in Successfully.");
-
-// ____________________(OR)____________________
-// let attempt = 0;
-// let password = "admin"
-
-// let pass = prompt("Enter your password: ");
-// attempt++;  
-
-// while (attempt < 3 && pass !== password){
-//     pass = prompt("Incorrect Password. Please Enter Again: ");
-//     attempt++;
-// }
-
-// if (attempt === 3 && pass !== password){
-//     console.error("Account Blocked.");
-// } else {
-//     console.log("Logged in Successfully.");
-// }
-
-// ____________________(Ask user for words until they type "stop". Count how many times they typed "yes")____________________
-
-// let word = prompt("Enter a word (type 'stop' to end): ");
-// let counter = 0;
-
-// while (word != "stop") {
-//     if (word === "yes") {
-//         counter++;
-//     }
-//     word = prompt("Enter a word (type 'stop' to end): ");
-// }
-// console.log(`You typed "yes" ${counter} times.`);
-
-// ____________________(Print numbers divisible by 7 from 1 to 50, Use moduo operator (%) and loop)____________________
-
-// console.log("The number which is divisible by 7 is: ");
-// for (let i = 1; i <= 50; i++) {
-//     if (i % 7 === 0) {
-//         console.log(i);
-//     }
-// }
-
-// ____________________(Sum of all odd numbers from 1 to 30 and only odd numbers.Print final sum.)____________________
-
-// let sum = 0;
-// for (let i = 1; i <= 30; i++) {
-//     if (i % 2 !== 0) {
-//         sum += i;
-//     }
-// }
-// console.log(`The sum of all odd numbers from 1 to 30 is: ${sum}`);
-
-// let sum = 0;
-// for (let i = 1; i <= 30; i++) {
-//     if (i % 2 == 1) {
-//         sum += i;
-//     }
-// }
-// console.log(`The sum of all odd numbers from 1 to 30 is: ${sum}`);
-
-// ____________________(Keep asking number untill user enters an even number, Use while loop. Stop only if input is even.____________________)
-
-// let num = +prompt("Enter a number: ");
-// while (num % 2 !== 0) {
-//     num = +prompt("That's an odd number. Please enter an even number: ");
-// }
-// if (num % 2 === 0) {
-//     console.log(`Thank you! ${num} is an even number.`);
-// }
-
-// ____________________(Print numbers between two user inputs Input start and end using prompt() -> Print all between.)____________________
-
-// console.log("Numbers between your inputs are: ");
-// let start = +prompt("Enter the starting number: ");
-// let end = +prompt("Enter the ending number: ");
-// if (start > end) {
-//     console.error("Invalid Range. Starting number should be less than or equal to ending number.");
-// }
-// for (let i = start; i<=end;i++){
+// -----------------(Break and Continue in Loop)-----------------
+// for (let i = 0; i<=10;i++){
+//     if (i===5) break;
 //     console.log(i);
 // }
 
-// ____________________(Print only first 3 odd numbers from 1 to 20 using loop. Stop with break after 3 odd prints.)____________________
+// for (let i = 0; i<=10;i++){
+//     if (i===5) continue;
+//     console.log(i);
+// }
 
-// let count = 0;
-// for (let i = 1; i <= 20; i++) {
-//     if (count === 3) break;
-//     if (i % 2 !== 0) {
-//         count++;
-//         console.log(i);
+// -----------------(Function in JavaScript)-----------------
+// function -> aapka code jo turant nahi chalega tab chalega jab aap bologe ki ab chalo
+// aap us code ko kitni bhi bar chala sakte ho
+
+// function khanaKhaao() {
+//     console.log("Taali uthao");
+//     console.log("Khaana khao");
+//     console.log("Table pe aao");
+//     console.log("Khaana khaalo");
+//     console.log("Bartan Rakho");
+// }
+// khanaKhaao();
+// khanaKhaao();
+// khanaKhaao();
+// khanaKhaao();
+
+// function doSomething(name, age, email){
+//     console.log(arguments );
+// }
+// doSomething("Rajesh", 20, "rajesh@gmail.com");
+
+// --------------------(Variable/Function Hoisting)--------------------
+// (Agar ap variable se function ban ne se pehle use nehi kar sakte)
+
+// a(); /* It is not allowed. */
+// var a = function(){
+
+// }
+
+// a(); /* It is allowed. */
+// function a(){
+
+// }
+
+// ---------------------(Functions in JavaScript)----------------------
+// Understanding Function in javascript and why its widely used - [`parameters`, `arguments`, `rest parameters` , `hoisting`, `variable Hoisting`, `Function Hoisting`]
+// Code ko reuse karne main help karta hai
+// function apke code ko tab chalata hai jab ap chaaho
+
+// function alooParatha(){
+//     console.log("🫓");
+// }
+// alooParatha();
+// alooParatha();
+
+// function abcd(age, name){
+//     // parameters
+// }
+// abcd(12,"harsh")
+// // arguments
+
+// function abcd (a,b,...c){
+//     console.log(a,b,c);
+// }
+// abcd(1,2,3,4,5,6,7);
+
+// console.log(a);
+// var a = 12;       /* It not showing error, it works but showing undefined. */
+
+// console.log(a);
+// let a = 12;         /* (Error) */
+
+// abcd();
+// function abcd(){
+//     console.log("Hey");
+// }
+
+// abcd();
+// var abcd= function(){
+//     console.log("Hey");
+// }
+
+// ----------------(Parameters in JavaScript - [`required`,`rest`,`default`])----------------
+
+// function abcd(){
+//     // Agar appne parameter banaye and aapne unme arguments nahi bheje to fir wo value parameter ki undefinrd ho jaayegi
+// }
+// abcd();
+
+// function abcd ({name , age}){
+//     console.log(name,age);
+// }
+// abcd ({name: "Rajesh", age: 21});
+
+// function abcd(...val){
+//     console.log(val);
+// }
+// abcd (1,2,3,4,5);
+
+// function abcd (a=0,b=0,c=0){
+//     console.log(a,b,c);
+// }
+// abcd (1,2);
+
+// --------------(Arguments in JavaScript-[`positional`,`default`,`spread`])-----------------
+
+// function abcd(a, b = 4, c, d) {
+//     console.log(a, b, c, d);
+// }
+// let arr = [1, 2, 3, 4];
+// abcd(...arr);
+
+// ---------------`Classic funcction`,`nested function`(function within function),`Scope Chain` in JavaScript.----------------
+
+// function abcd(){
+//     function defg(){
+//         console.log("defg chala");
+//     }
+//     defg();
+// }
+// abcd();
+
+// let a = 12;
+// function abcd() {
+//     let b = 13;
+//     function defg() {
+//         console.log(b);
+//     }
+// }
+// abcd();
+
+// ------------------Understanding Immediately Invoked Function Expression(IIFE).---------------
+
+// (function (){
+//     let balance = 5000;
+// }) ();
+
+// -----------------More function in javascript - [`Arrow Function`,`Fat Arrow`,`Anonymous`,`Higher Order`,`Callback`,`First Class`,`Pure Function`,`Impure Function`]------------------
+
+// function abcd(){
+
+// }
+
+// let fnc = () => {
+//     console.log("Hellooooooooooooooooooooo");
+// }
+// fnc();
+
+// --------------(Anonymous function)--------------
+// Without name function
+// Higher Order Function -> ek aisa function jo ki return karde ek aur function
+// woh function accept karle ek aur parameter main
+
+// ----------Higher Order Function----------
+
+// function abcd(){             /* Higher order fnc */
+//     return function(){
+
 //     }
 // }
 
-// ____________________(Ask user 5 numbers. Count how many are positive Use loop + condition + counter.)____________________
+// ---------Call Back Function-----------
 
-// let count = 0;
-// for (let i = 1; i <= 5; i++) {
-//     let num = +prompt(`Enter number ${i} : `);
-//     if (num >= 0) {
-//         count++;
+// function abcd(a){
+
+// }
+// abcd (function(){            /* Call Back Function */
+
+// })
+
+// -----------First Class Function--------------
+// First class function ek concept hai -> funnctions us language mein variable ki tarah use ho sakte hai
+
+// function abcd(a,b){
+
+// }
+// abcd(function(){
+
+// },2)
+
+// ----------Pure Function----------
+// Pure function ek aisa function
+// same input = same output
+
+// let a = 12;
+// function abcd (val){
+//     console.log(val+2);
+// }
+// abcd(2);
+// abcd(8);
+
+// ----------Impure Function---------
+// same input = different output ho sakta hai
+// koi na koi side effects ho sakta hai
+
+// let a = 12;
+// function abcd (val){
+//     console.log(Math.random() + val );
+// }
+// abcd(10);
+// abcd(10);
+// abcd(10);
+// abcd(10);
+
+// let a = 12;
+// function abcd (val){
+//     a = Math.random() + val;
+//     console.log(a);
+// }
+// abcd(10);
+// abcd(10);
+// abcd(10);
+// abcd(10);
+
+// ------------Understanding `Closures`,`Scoping Rule`------------
+// Closure -> Ek function hai jo return karta hai function but returning functionn jo hai woh parent function ka koi variable use karega
+
+// function abcd() {
+//     let a = 12;
+//     return function () {
+//         console.log(a);
 //     }
 // }
-// console.log(`You entered ${count} positive numbers.`);
 
-// ____________________(ATM Simulator - Allow 3 withdrawals amount 3 times. If enough balance -> deduct      Else -> Print "Insufficient Balnce")____________________
+// _______________(ARRAYS)______________
+// ---------------What are Arrays in javascript and how to create an array.--------------
+// Arrays -> ek se jaada members rakhne ki jagah
+// Understanding how to accessing elements in array.
 
-// let balance = 1000;
-// let flag = false;
+// let arr = [234, 345, 567, 7865, 6785, 5678]
+// console.log(arr[5]);
 
-// let counter = 0;
-// while (balance > 0 && counter !== 3) {
-//     let withdraw = +prompt("Enter amount to withdraw: ");
-//     counter++;
-//     if (withdraw <= balance) {
-//         balance -= withdraw;
+// let arr = [];
+// let arr2 = new Array();
+
+// -------------Functions on arrays - [`push`,`pop`,`shift`,`unshift`,`indexOf`,`array destructuring`,`filter`,`some`,`map`,`reduce`,`spread operator`,`slice`,`reverse`,`sort`,`join`,`toString`]-------------
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// arr.push(11);
+// arr.pop(11);
+// arr.shift(11);
+// arr.unshift(0);
+// arr.indexOf(4);
+// let [a, ,b]=arr;
+
+// --------Filter-------
+// let arr = [1, 2, 3, 4];
+// let arr2 = arr.filter(function (val) {
+//     return val < 3;
+// })
+
+// -------Spread operator-------
+// let arr = [1, 2, 3, 4];
+// let arr2 = [...arr];
+
+// --------Iteratig over arrays using - [`For loop`,`forEach`]-------
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 0; i<=4;i++){
+//     console.log(arr[i]);
+// }
+
+// let arr = [1, 2, 3, 4, 5];
+// arr.forEach(function (val) {
+//     console.log(val);
+// });
+
+// --------Understanding what are objects in javascript-[`key-value pair`]--------
+
+// let obj = {
+//     name: "Rajesh",
+//     age: 21,
+//     email:"rajesh@gmail.com"
+// };
+
+// --------Creating objects, Accessing Properties, Deleting Property and Nested Objects.--------
+/*For accessing the value of object we can use (obj.name) & (obj['name']) */
+/*For deleting the object we can use (delete obj.name)*/
+
+// let obj = {
+//     name: "Rajesh",
+//     socials: {
+//         instagram: "jhsbdf",
+//         facebook: "jhdfuy"
 //     }
-//     else {
-//         flag = true;
-//         break;
-//     }
-// }
-
-// if (flag === true) {
-//     console.log("Insufficient Balance.");
-// }
-// console.log(`Your remaining balance is: ${balance}`);
-
-// ____________________(ATM Simulator - Allow 3 withdrawals amount 3 times. If enough balance -> deduct      Else -> Print "Insufficient Balnce")____________________
-
-// let balance = 1000;
-// let counter = 0;
-// let flag = false;
-
-// while (balance > 0 && counter !== 3) {
-//     let withdraw = prompt("Enter amount to withdraw: ");
-//     counter++;
-//     if (withdraw <= balance) {
-//         balance -= withdraw;
-//     } else {
-//         flag = true;
-//         break;
-//     }
-// }
-
-// if (flag === true) {
-//     console.log("Insufficient Balance.");
-// }
-// console.log(`Remaining balance is ${balance}`);
-
-// let balance = 1000;
-// let counter = 0;
-// let flag= false;
-
-// while (balance > 0 && counter !== 3) {
-//     let withdraw = prompt("Enter amount: ");
-//     counter++;
-//     if (withdraw<=balance){
-//         balance -= withdraw;
-//     }
-//     else {
-//         flag = true;
-//         break;
-//     }
-// }
-// if (flag === true){
-//     console.log("Insufficient Balance.");
-// }
-// console.log(`Your remaining balance is ${balance}`);
+// };
