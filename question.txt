@@ -1,43 +1,28 @@
-Level 1 – Pure Beginner Practice
 
-7. Ask user’s age and check if eligible to vote
-If age >= 18 → “Eligible”, else → “Not eligible”
+# 🟢 Level 1 – Basic Function, Array & Object Code Tasks (Easy)
 
-8. Print multiplication table of 5
-Use loop to print 5 × 1 to 5 × 10.
+1. Write a function `sayHello()` that prints `"Hello JavaScript"`.
+2. Create a function `add(a, b)` that returns their sum and log the result.
+3. Write a function with a default parameter `name = "Guest"` that prints `"Hi <name>"`.
+4. Use rest parameters to make a function that adds unlimited numbers.
+5. Create an IIFE that prints `"I run instantly!"`.
+6. Make a nested function where the inner one prints a variable from the outer one.
+7. Create an array of 5 fruits. Add one at the end and remove one from the beginning.
+8. Use a `for` loop to print all elements of an array.
+9. Create an object `person` with keys `name`, `age`, and `city`, and print each key’s value.
+10. Use `setTimeout()` to log `"Time’s up!"` after 2 seconds.
 
-9. Count how many numbers between 1 and 15 are greater than 8
-Loop and count conditionally.
+---
 
-10. Ask user for password and print access status
-Hardcoded correct password. Compare with user input.
+# 🟡 Level 2 – Functional Thinking & Logic Tasks (Intermediate)
 
-Level 2 – Slightly Tougher but Logical
-11. Allow only 3 attempts to enter correct password
-If user gets it right early, stop. If not → “Account locked”
-
-12. Ask user for words until they type “stop”. Count how many times they typed “yes”
-Loop until "stop" is typed. Count "yes".
-
-13. Print numbers divisible by 7 from 1 to 50
-Use modulo % and loop.
-
-14. Sum of all odd numbers from 1 to 30
-Add only odd numbers. Print final sum.
-
-15. Keep asking number until user enters an even number
-Use while loop. Stop only if input is even.
-
-16. Print numbers between two user inputs
-Input start and end using prompt() → print all between.
-
-17. Print only first 3 odd numbers from 1 to 20
-Use loop. Stop with break after 3 odd prints.
-
-18. Ask user 5 numbers. Count how many are positive
-Use loop + condition + counter.
-
-19. ATM Simulator – Allow 3 withdrawals
-Start with ₹1000 balance. Ask withdrawal amount 3 times.
-If enough balance → deduct
-Else → print “Insufficient balance”
+1. Write a higher-order function `runTwice(fn)` that takes another function and executes it two times.
+2. Create one pure function that always returns the same output for a given input, and one impure function using a global variable.
+3. Write a function that uses object destructuring inside parameters to extract and print `name` and `age`.
+4. Demonstrate the difference between normal function and arrow function when used as object methods (the `this` issue).
+5. Given an array of numbers, use `map()` to create a new array where each number is squared.
+6. Use `filter()` to get only even numbers from an array.
+7. Use `reduce()` to find the total salary from an array of numbers `[1000, 2000, 3000]`.
+8. Create an array of names and use `some()` and `every()` to test a condition (e.g., all names longer than 3 chars).
+9. Create an object `user` and test the behavior of `Object.freeze()` and `Object.seal()` by adding/changing keys.
+10. Create a nested object (`user → address → city`) and access the city name inside it.
