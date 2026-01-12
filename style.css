@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+}
+
+button {
+    background-color: crimson;
+    padding: 10px 30px;
+    margin-top: 5%;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    border: 0.1px solid white;
+}
+
+h2{
+    margin-left: 10px;
+    font-size: 50px;
+}
