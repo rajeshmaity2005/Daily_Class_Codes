@@ -4,6 +4,7 @@
     box-sizing: border-box;
     color: white;
 }
+
 html,
 body {
     height: 100%;
@@ -11,20 +12,34 @@ body {
     background-color: black;
 }
 
-#box{
+#box {
     height: 100px;
     width: 100px;
     background-color: crimson;
 }
 
 
-h1{
+/* h1{
     margin: 10px;
-}
-button{
-    margin: 10px;
+} */
+/* button{
+    margin: 10px 28px;
     padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: crimson;
+}
+
+#bulb{
+    border: 1px solid rgb(255, 184, 184);
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 10px;
+} */
+
+h1 {
+    font-size: 30px;
+    font-weight: 800;
 }
