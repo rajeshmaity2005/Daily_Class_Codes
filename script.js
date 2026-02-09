@@ -1,24 +1,14 @@
-var stranger = document.querySelector('h5')
-var btn = document.querySelector('button')
+var con = document.querySelector('#container')
+var love = document.querySelector("i")
 
-var flag = 0;
+con.addEventListener("dblclick", function () {
+    love.style.transform = 'translate(-50%,-50%) scale(1)'
+    love.style.opacity = 0.8
 
-btn.addEventListener('click', function () {
-
-
-    if (flag == 0) {
-        stranger.style.color = 'green'
-        stranger.innerHTML = 'Friend'
-        btn.textContent = 'Remove Friend'
-        flag = 1;
-        btn.style.backgroundColor = 'rgb(206, 206, 206)'
-        btn.style.color = 'white'
-    } else {
-        stranger.style.color = 'red'
-        stranger.innerHTML = 'Stranger'
-        flag = 0;
-        btn.textContent = 'Add Friend'
-        btn.style.backgroundColor = 'cornflowerBlue'
-        btn.style.color = 'white'
-    }
+    setTimeout(function(){
+        love.style.opacity = 0
+    },1000)
+    setTimeout(function(){
+        love.style.transform = 'translate(-50%,-50%) scale(0)'
+    },2000)
 })
