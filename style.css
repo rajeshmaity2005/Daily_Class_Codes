@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 html,
 body {
@@ -10,43 +9,30 @@ body {
     width: 100%;
 }
 
-main{
-    height: 100%;
-    width: 100%;
-    background-color: #111;
+body {
+    background-color: black;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
     flex-direction: column;
+    gap: 10px;
 }
 
-/* #box{
+#box{
     height: 200px;
     width: 200px;
-    background-color: rgb(0,0,0);
-    border: 2px solid white;
+    background-color: rgb(255, 149, 149);
     border-radius: 10px;
-} */
-
-h1{
-    font-size: 70px;
-    background-color: rgb(113, 170, 255);
-    padding: 40px 50px;
-    border-radius: 10px;
-    font-family: monospace;
 }
 
-button {
-    padding: 10px 20px;
+button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
     background-color: crimson;
-    border: 0.5px solid rgb(0, 0, 0);
-    border-radius: 100px;
-    font-weight: 600;
-    cursor: pointer;
+    color: white;
 }
 
 button:active{
     scale: 0.95;
-    /* background-color: aqua; */
 }
