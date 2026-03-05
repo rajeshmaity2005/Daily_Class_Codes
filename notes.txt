@@ -1,0 +1,22 @@
+// var btn = document.querySelector('button')
+
+// btn.addEventListener('click', function () {
+//     var h1 = document.createElement('h1')
+//     h1.innerHTML='Hello Everyone How are you!!'
+//     console.log(h1)
+// })
+
+
+
+// var h1 = document.createElement('h1')
+// h1.innerHTML = 'Hello Everyone'
+// var main = document.querySelector('main')
+// main.appendChild(h1)
+
+
+
+// var btn = document.createElement('h2')
+// btn.innerHTML = 'Download'
+// btn.style.color = 'red'
+// var main = document.querySelector('main')
+// main.appendChild(btn)
