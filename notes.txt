@@ -1,22 +1,49 @@
-// var btn = document.querySelector('button')
+setTimeout - delay
+setInterval - controlled loop
+clearInterval - 
 
-// btn.addEventListener('click', function () {
-//     var h1 = document.createElement('h1')
-//     h1.innerHTML='Hello Everyone How are you!!'
-//     console.log(h1)
-// })
-
-
-
-// var h1 = document.createElement('h1')
-// h1.innerHTML = 'Hello Everyone'
-// var main = document.querySelector('main')
-// main.appendChild(h1)
+sync - Ek time pe ek kaam
+async - Ek time pe multitasking
 
 
 
-// var btn = document.createElement('h2')
-// btn.innerHTML = 'Download'
-// btn.style.color = 'red'
-// var main = document.querySelector('main')
-// main.appendChild(btn)
+
+
+
+setTimeout(function(){
+    console.log("hello 1")
+},5000)
+setTimeout(function(){
+    console.log("hello 2")
+},3000)
+setTimeout(function(){
+    console.log("hello 3")
+},2000)
+
+
+
+
+var btn = document.querySelector('button')
+var h1 = document.querySelector('h1')
+btn.addEventListener('click',function(){
+    h1.innerHTML = 'Changing...'
+    setTimeout(function(){
+        // console.log('Hello I am Rajesh, Welcome to my industry..')
+        h1.innerHTML = 'Hello I am Rajesh, Welcome to my industry..'
+    },2000)
+})
+
+
+
+// var a = 0
+// var int = setInterval(() => {
+//     a++
+//     console.log(a)
+// }, 1000);
+
+// setInterval(() => {
+//     clearInterval(int)
+// }, 5000);
+
+
+
