@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("Gilroy-Light.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Gilroy;
 }
 
 html,
@@ -11,47 +16,123 @@ body {
     width: 100%;
 }
 
-main {
+#main {
     height: 100%;
     width: 100%;
-    background-color: black;
-    padding: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.card {
-    /* height: 350px; */
-    width: 280px;
     background-color: white;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: flex-start; */
+    padding: 0px 30px;
+}
+
+#nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nav h3 {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+#nav i {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+#nav h1 {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#nav button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 100;
+}
+
+#btn1 {
+    background-color: rgb(255, 255, 255);
+    color: orangered;
+    border: 1px solid black;
+}
+
+#btn2 {
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+#main>h1 {
+    font-size: 150px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
-    padding: 30px;
-    border-radius: 10px;
+    /* background-color: red; */
 }
 
-.card img{
-    height: 150px;
-    width: 150px;
+img{
+    height: 480px;
+    width: 400px;
     object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
 }
 
-.card h3{
-    font-size: 30px;
-    white-space: nowrap;
-    /* font-weight: 100; */
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
 }
-.card h4{
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+
+
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
     font-size: 17px;
-    /* font-weight: 500; */
-    margin-top: 10px;
-    color: rgb(255, 102, 0);
-    margin-bottom: 10px;
 }
 
-.card p{
-    font-size: 14px;
+#btm-right{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#btm-icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 100;
 }
