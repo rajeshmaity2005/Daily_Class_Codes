@@ -3,6 +3,11 @@
     src: url("Gilroy-Light.otf");
 }
 
+@font-face {
+    font-family: "Gilroy2";
+    src: url("Gilroy-ExtraBold.otf");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,117 +27,115 @@ body {
     background-color: white;
 }
 
-#nav {
-    height: 100px;
+#intro {
+    height: 45%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* align-items: flex-start; */
-    padding: 0px 30px;
+    padding: 50px;
 }
 
-#nav-part1 {
+#intro h1 {
+    font-size: 145px;
+    letter-spacing: -3px;
+    line-height: 133px;
+    /* font-family: gilroy2; */
+}
+
+#place {
+    margin-top: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-between;
+}
+
+#place h3,
+#place h4 {
+    font-size: 33px;
+    font-weight: 600;
+}
+
+#hero-image {
+    height: 90%;
+    width: 100%;
+    background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-1600.webp);
+    background-size: cover;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 30px 40px;
 }
 
 #nav h3 {
-    font-size: 16px;
-    border: 1px solid black;
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-weight: 500;
-}
-
-#nav i {
-    font-size: 16px;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 50px;
-    font-weight: 500;
-}
-
-#nav h1 {
-    font-weight: 500;
-    font-size: 22px;
-    text-transform: uppercase;
-}
-
-#nav button {
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-weight: 100;
-}
-
-#btn1 {
-    background-color: rgb(255, 255, 255);
-    color: orangered;
-    border: 1px solid black;
-}
-
-#btn2 {
-    background-color: orangered;
+    background-color: black;
     color: white;
-    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 50px;
 }
 
-#main>h1 {
-    font-size: 150px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#about {
+    height: 45%;
     width: 100%;
-    text-align: center;
-    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px;
 }
 
-img{
-    height: 480px;
-    width: 400px;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 20px;
+#about h2 {
+    width: 70%;
+    font-size: 88px;
+    line-height: 83px;
+    letter-spacing: -3px;
 }
 
-#img1{
-    transform: translate(-50%,-50%) rotate(-30deg);
-}
-#img2{
-    transform: translate(-50%,-50%) rotate(-20deg);
-}
-#img3{
-    transform: translate(-50%,-50%) rotate(-10deg);
-}
+#about-part2 {
+    width: 35%;
+    height: 100%;
+    padding: 0px 60px;
+    border-left: 3px solid black;
 
-
-#btm-left{
-    position: absolute;
-    bottom: 5%;
-    left: 3%;
-    font-size: 17px;
-}
-
-#btm-right{
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
-    font-size: 17px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-#btm-icon{
+#about-part2 h3 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#icons i {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 27px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#work{
+    height: 45%;
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 20px;
     display: flex;
-    justify-content: space-between;
-    font-size: 25px;
-    font-weight: 100;
+    padding: 0px 60px;
+}
+
+#work1{
+    width: 30%;
+    height: 100%;
+    background-color: #ff0000;
+}
+#work2{
+    width: 70%;
+    height: 100%;
+    background-color: blue;
 }
