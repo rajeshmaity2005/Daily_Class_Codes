@@ -1,141 +1,29 @@
-@font-face {
-    font-family: "Gilroy";
-    src: url("Gilroy-Light.otf");
-}
-
-@font-face {
-    font-family: "Gilroy2";
-    src: url("Gilroy-ExtraBold.otf");
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Gilroy;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-#main {
-    height: 100%;
-    width: 100%;
-    background-color: white;
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#intro {
-    height: 45%;
-    width: 100%;
-    padding: 50px;
-}
-
-#intro h1 {
-    font-size: 145px;
-    letter-spacing: -3px;
-    line-height: 133px;
-    /* font-family: gilroy2; */
-}
-
-#place {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#place h3,
-#place h4 {
-    font-size: 33px;
-    font-weight: 600;
-}
-
-#hero-image {
-    height: 90%;
-    width: 100%;
-    background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-1600.webp);
-    background-size: cover;
-}
-
-#nav {
-    position: fixed;
-    width: 100%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 30px 40px;
-}
-
-#nav h3 {
-    background-color: black;
-    color: white;
-    padding: 15px 20px;
-    font-size: 20px;
-    border-radius: 50px;
-}
-
-#about {
-    height: 45%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 60px;
-}
-
-#about h2 {
-    width: 70%;
-    font-size: 88px;
-    line-height: 83px;
-    letter-spacing: -3px;
-}
-
-#about-part2 {
-    width: 35%;
-    height: 100%;
-    padding: 0px 60px;
-    border-left: 3px solid black;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#about-part2 h3 {
-    font-size: 35px;
-    font-weight: 600;
-}
-
-#icons i {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-size: 27px;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-#work{
-    height: 45%;
-    width: 100%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    margin: 20px;
-    display: flex;
-    padding: 0px 60px;
-}
-
-#work1{
-    width: 30%;
-    height: 100%;
-    background-color: #ff0000;
-}
-#work2{
-    width: 70%;
-    height: 100%;
-    background-color: blue;
+h1 {
+  font-size: 100px;
+  color: white;
+  font-family: monospace;
+    background-color: #333;
+  border-radius: 10px;
+  padding: 20px 40px;
 }

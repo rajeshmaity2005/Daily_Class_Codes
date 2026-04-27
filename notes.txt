@@ -1,0 +1,11 @@
+var body = document.querySelector('body')
+body.addEventListener('click',function(){
+    console.log('hello how are you');
+})
+Instead of this write this type of shortcut
+
+document.body.addEventListener('keydown', function (dets) {
+    console.log(dets.code);
+})
+
+var aud = new Audio("./sounds/78.mp3")
