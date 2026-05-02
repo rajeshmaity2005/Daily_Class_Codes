@@ -1,88 +1,106 @@
 var body = document.querySelector('body')
-var h1 = document.querySelector('h1')
+var btn = document.querySelector('button')
+var container = document.querySelector('#container')
+var hearts = document.querySelectorAll('i');
 
-body.addEventListener('keydown', function (dets) {
-    // console.log(dets.code);
-    if (dets.code == 'KeyA') {
-        new Audio("./sounds/21.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyA') {
-        new Audio("./sounds/28.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyB') {
-        new Audio("./sounds/34.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyC') {
-        new Audio("./sounds/40.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyD') {
-        new Audio("./sounds/46.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyE') {
-        new Audio("./sounds/53.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyF') {
-        new Audio("./sounds/66.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyG') {
-        new Audio("./sounds/72.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyH') {
-        new Audio("./sounds/78.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyI') {
-        new Audio("./sounds/84.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyJ') {
-        new Audio("./sounds/90.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyK') {
-        new Audio("./sounds/96.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyL') {
-        new Audio("./sounds/102.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyM') {
-        new Audio("./sounds/108.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyN') {
-        new Audio("./sounds/21.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyO') {
-        new Audio("./sounds/28.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyP') {
-        new Audio("./sounds/34.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyQ') {
-        new Audio("./sounds/40.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyR') {
-        new Audio("./sounds/21.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyS') {
-        new Audio("./sounds/108.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyT') {
-        new Audio("./sounds/28.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyU') {
-        new Audio("./sounds/96.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyV') {
-        new Audio("./sounds/90.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyW') {
-        new Audio("./sounds/84.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyX') {
-        new Audio("./sounds/66.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyY') {
-        new Audio("./sounds/40.mp3").play();
-        h1.innerHTML = dets.key
-    } else if (dets.code == 'KeyZ') {
-        new Audio("./sounds/53.mp3").play();
-        h1.innerHTML = dets.key
+let miss = 0;
+let interval;
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+function getRandomLetter() {
+    return letters[Math.floor(Math.random() * letters.length)];
+}
+
+function createBubble() {
+    const bubble = document.createElement("div");
+    bubble.classList.add("bubble");
+    bubble.style.width = "60px";
+    bubble.style.height = "60px";
+    bubble.style.left = Math.random() * (window.innerWidth - 100) + "px";
+
+    const duration = 5; // bubble visible time
+    bubble.style.animationDuration = duration + "s";
+
+    var lett = getRandomLetter();
+    bubble.textContent = lett;
+
+    bubble.style.fontSize = '40px';
+    bubble.style.color = 'white';
+    bubble.style.backgroundColor = 'rgba(0, 225, 255, 0.29)';
+
+    container.appendChild(bubble);
+
+    // Correct key removes bubble
+    function handleKey(dets) {
+        if (lett.toLowerCase() === dets.key.toLowerCase()) {
+            bubble.remove();
+            new Audio("./sounds/u_o8xh7gwsrj-app_interface_click_2-476372.mp3").play();
+            console.log("Correct");
+            body.removeEventListener("keydown", handleKey);
+        }
     }
-})
+
+    body.addEventListener("keydown", handleKey);
+
+    // If bubble not removed = miss
+    setTimeout(() => {
+        if (bubble.parentNode) {
+            bubble.remove();
+            miss++;
+            console.log("Miss:", miss);
+
+            // Make heart red on every miss
+            if (miss === 1) {
+                document.querySelectorAll("i")[0].style.color = "red";
+                new Audio("./sounds/dragon-studio-tennis-ball-hit-386155.mp3").play();
+            }
+            if (miss === 2) {
+                document.querySelectorAll("i")[1].style.color = "red";
+                new Audio("./sounds/dragon-studio-tennis-ball-hit-386155.mp3").play();
+            }
+            if (miss === 3) {
+                document.querySelectorAll("i")[2].style.color = "red";
+                new Audio("./sounds/dragon-studio-tennis-ball-hit-386155.mp3").play();
+            }
+            if (miss === 4) {
+                document.querySelectorAll("i")[3].style.color = "red";
+                new Audio("./sounds/dragon-studio-tennis-ball-hit-386155.mp3").play();
+            }
+            if (miss === 5) {
+                document.querySelectorAll("i")[4].style.color = "red";
+                new Audio("./sounds/dragon-studio-tennis-ball-hit-386155.mp3").play();
+            }
+
+
+
+            bubble.addEventListener("click", function () {
+                bubble.remove();
+
+                new Audio("./sounds/u_o8xh7gwsrj-app_interface_click_2-476372.mp3").play();
+
+                console.log("Bubble Clicked");
+            });
+
+
+            body.removeEventListener("keydown", handleKey);
+
+            if (miss === 5) {
+                clearInterval(interval);
+                console.log('Game Over');
+
+                container.textContent = 'Game Over';
+                container.style.color = 'white';
+                container.style.backgroundColor = 'rgb(255, 0, 0)';
+                container.style.fontSize = '150px';
+                container.style.fontWeight = '900';
+                container.style.fontFamily = 'monospace';
+            }
+        }
+    }, duration * 778);
+}
+
+btn.addEventListener('click', function () {
+    btn.style.display = 'none';
+    interval = setInterval(createBubble, 1000);
+});
