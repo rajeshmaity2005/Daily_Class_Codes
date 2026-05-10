@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Myfont";
+  src: url(./Gilroy-Light.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,24 +16,15 @@ body {
 }
 
 body {
-  background-color: black;
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images5/Black-and-White-4K-Wallpaper-for-Desktop.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* filter: blur(20px); */
+  align-items: center;
+  background-color: #000;
+  text-align: center;
 }
 
-:root {
-  --x: 400px;
-  --y: 400px;
-}
-
-#box {
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(150px at var(--x) var(--y), rgba(0, 0, 0, 0.228) 0%, rgba(0, 0, 0, 0.9) 80%);
+p {
+  color: greenyellow;
+  font-size: 3rem;
+  font-family: monospace;
 }
