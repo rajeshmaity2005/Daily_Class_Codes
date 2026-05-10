@@ -1,0 +1,31 @@
+Advance CSS Notes:-
+1. Box-Shadow - To make a Shadow of a box
+
+2. Text-Shadow - To make a shadow of any text
+
+3. Conic-Gradient - It's a type of gradient where color will mixing like a bold color or a gradient type.
+
+4. @keyframes - To animate something
+@keyframes{
+    from{
+        background-color: red;
+        border-radius: 5px;
+    }
+    to{
+        background-color: blue;
+        border-radius: 50px;
+    }
+}
+
+5. @property - Use for making custom variables
+@property --bgColor{
+    syntax: "<color>"; //color, length, angle
+    initial-value: red;
+    inherit: false;
+}
+
+6. :has()
+
+
+
+
