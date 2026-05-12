@@ -8,83 +8,68 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #000000;
-}
-
-html {
-  font-family: monospace;
-  color: white;
 }
 
 body {
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
+  anchor-name: --some-anchor;
 }
 
-#box {
-  height: 400px;
-  width: 300px;
-  background-color: #000000;
+#nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  flex-direction: column;
-  text-align: center;
-  gap: 10px;
-  padding: 23px;
-  background:
-    linear-gradient(black) padding-box,
-    conic-gradient(from var(--rotate), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.494), rgba(0, 0, 0, 0)) border-box;
-  border: 0.01px solid rgb(64, 64, 64);
-  animation: animationRotate 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-play-state: paused;
-  transition: all 0.3s linear;
-  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.281);
-  color: white;
+  /* gap: 30px; */
+  transition: all 0.2s linear;
 }
 
-#box:hover {
-  animation-play-state: running;
-  border: 3px solid rgba(64, 64, 64, 0);
-  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.281);
-  text-shadow: 0px 0px 10px rgb(172, 255, 47);
 
+#nav .link {
+  /* transition: all 0.2s linear; */
+  transition: all 0.1s linear;
+  cursor: pointer;
+  /* background-color: rgb(225, 255, 0); */
+  padding: 10px 30px;
+  border-radius: 10px;
 }
 
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+
+
+#nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  font-family: monospace;
+  font-size: 40px;
 }
 
-@keyframes animationRotate {
-  from {
-    --rotate: 0deg;
-  }
-
-  to {
-    --rotate: 360deg;
-  }
+#anchor {
+  position-anchor: --some-anchor;
+  position: absolute;
+  top: anchor(top);
+  right: anchor(right);
+  bottom: anchor(bottom);
+  left: anchor(left);
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transition: all 0.2s linear;
 }
 
-#box img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+#nav:has(.link:hover) .link {
+  transform: scale(0.7);
+  opacity: 0.4;
 }
-
-#box h1 {
-  color: rgb(172, 255, 47);
+#nav .link:hover {
+  anchor-name: --some-anchor;
+  color: rgb(200, 255, 0);
   font-weight: 900;
+  transform: scale(1.1) !important;
+  /*Use scale higher than 1 because it causing hover issues...*/
+  opacity: 1 !important;
 }
 
-#box p {
-  /* color: rgb(104, 104, 104); */
-}
