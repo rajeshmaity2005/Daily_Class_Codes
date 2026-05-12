@@ -33,8 +33,26 @@ body {
   flex-direction: column;
   text-align: center;
   gap: 10px;
-  border: 0.01px solid rgb(64, 64, 64);
   padding: 23px;
+  background:
+    linear-gradient(black) padding-box,
+    conic-gradient(from var(--rotate), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.494), rgba(0, 0, 0, 0)) border-box;
+  border: 0.01px solid rgb(64, 64, 64);
+  animation: animationRotate 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  transition: all 0.3s linear;
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.281);
+  color: white;
+}
+
+#box:hover {
+  animation-play-state: running;
+  border: 0.01px solid rgba(64, 64, 64, 0);
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.281);
+  text-shadow: 0px 0px 10px rgb(172, 255, 47);
+
 }
 
 @property --rotate {
@@ -62,21 +80,11 @@ body {
   border-radius: 50%;
 }
 
-#box h1{
+#box h1 {
   color: rgb(172, 255, 47);
   font-weight: 900;
 }
-#box p{
-  color: rgb(104, 104, 104);
-}
 
-#box:hover {
-  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.281);
-  border: 2px solid rgba(255, 255, 255, 0);
-  background:
-    linear-gradient(black) padding-box,
-    conic-gradient(from var(--rotate), rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.494), rgba(0, 0, 0, 0)) border-box;
-
-  animation: animationRotate 3s;
-  animation-iteration-count: infinite;
+#box p {
+  /* color: rgb(104, 104, 104); */
 }
