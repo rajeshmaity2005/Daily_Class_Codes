@@ -15,7 +15,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  anchor-name: --some-anchor;
 }
 
 #nav {
@@ -27,13 +26,11 @@ body {
 
 
 #nav .link {
-  /* transition: all 0.1s linear; */
+  transition: all 0.1s linear;
   cursor: pointer;
   padding: 10px 30px;
   border-radius: 10px;
 }
-
-
 
 #nav a {
   text-decoration: none;
@@ -43,18 +40,9 @@ body {
   font-size: 40px;
 }
 
-#anchor {
-  position-anchor: --some-anchor;
-  position: absolute;
-  top: anchor(top);
-  right: anchor(right);
-  bottom: anchor(bottom);
-  left: anchor(left);
-  background-color: rgb(33, 33, 33);
-  border-radius: 10px;
-  pointer-events: none;
-  mix-blend-mode: difference;
-  transition: all 0.2s linear;
+#nav:has(.link:hover) .link {
+  transform: scale(0.7);
+  opacity: 0.4;
 }
 
 #nav .link:hover {
@@ -65,4 +53,3 @@ body {
   /*Use scale higher than 1 because it causing hover issues...*/
   opacity: 1 !important;
 }
-

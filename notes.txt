@@ -24,8 +24,17 @@ Advance CSS Notes:-
     inherit: false;
 }
 
-6. :has()
+6. :has() - It uses for transform a hover effect to opposite at same time
+    #nav:has(.link:hover) .link {
+      transform: scale(0.7);
+      opacity: 0.4;
+    }
 
-
-
-
+    #nav .link:hover {
+      anchor-name: --some-anchor;
+      color: rgb(200, 255, 0);
+      font-weight: 900;
+      transform: scale(1.1) !important;
+      /*Use scale higher than 1 because it causing hover issues...*/
+      opacity: 1 !important;
+    }
